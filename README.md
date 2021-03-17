@@ -41,6 +41,8 @@ npm run start
 
 # :tada: Acknowledgements
 
-- [RocketSeat Team](https://rocketseat.com.br/)
+- [Dev Robson Gil Rocha](https://github.com/RobsonGilRocha)
 
-- [Diego Fernandes, CTO at Rocketseat](https://github.com/diego3g)
+- [Dev Edmar Rafael](https://github.com/Edmar-Rafael)
+
+- [Dev/Mentor/Autor/Designer  Alan de Oliveira Quadros](https://github.com/AlanQuadros)
