@@ -1,10 +1,11 @@
-import { Switch, Route } from 'react-router-dom'
+import { Switch, Route, Redirect } from 'react-router-dom'
 import { Home, GameInfo } from '../pages'
 
 function Routes() {
   return(
     <Switch>
-      <Route path='/' component={Home} exact/>
+      <Redirect from={'/'} to={'/pages/1'} exact/>
+      <Route path="/pages/:page+" component={Home} exact/>
       <Route path='/gameinfo/:id+' component={GameInfo}/>
     </Switch>
   )
