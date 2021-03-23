@@ -1,13 +1,8 @@
 import React from 'react';
-import styled from 'styled-components'
+import { Video } from './styles'
 import YouTube from 'react-youtube';
 
-const Video = styled.div`
-  height:211px;
-  width:407px;
-`
-
-function BoxVideo({game}) {
+function Frame({game}) {
 
   const opts = {
     height: '211',
@@ -24,11 +19,8 @@ function BoxVideo({game}) {
         <YouTube videoId={game.clip.video} opts={opts }/>
       </Video>
     );
-  
   }
-
   return null
-  
 }
 
-export default BoxVideo;
+export default Frame;

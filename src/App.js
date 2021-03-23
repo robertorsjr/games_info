@@ -1,9 +1,10 @@
-import Container from './components/Container'
+import { BrowserRouter } from 'react-router-dom'
+import  Routes  from './routes'
 
-function App() {
-  return (
-    <Container/>
-  );
-}
+const App = () => (
+  <BrowserRouter>
+    <Routes/>
+  </BrowserRouter>
+)
 
 export default App;

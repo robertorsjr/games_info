@@ -1,18 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 @import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
-
 @font-face {
   font-family: 'Joystix';
-  src: url('./font/Joystix.ttf'); /* IE9 Compat Modes */
+  src: url('./assets/fonts/Joystix.ttf'); /* IE9 Compat Modes */
   src: local('Joystix'), local('Joystix'),
-       url('./font/Joystix.ttf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('./font/Joystix.ttf') format('woff2'), /* Super Modern Browsers */
-       url('./font/Joystix.ttf') format('woff'), /* Modern Browsers */
-       url('./font/Joystix.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('./font/Joystix.ttf#Joystix') format('svg'); /* Legacy iOS */
+       url('./assets/fonts/Joystix.ttf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./assets/fonts/Joystix.ttf') format('woff2'), /* Super Modern Browsers */
+       url('./assets/fonts/Joystix.ttf') format('woff'), /* Modern Browsers */
+       url('./assets/fonts/Joystix.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./assets/fonts/Joystix.ttf#Joystix') format('svg'); /* Legacy iOS */
 }
-
 
 body {
   margin: 0 auto;
