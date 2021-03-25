@@ -9,7 +9,7 @@ export const CustomModal = styled(Modal)`
   bottom: auto;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-  position: relative;
+  position: fixed;
   width: 600px;
   background: #161618;
   border-radius: 20px;

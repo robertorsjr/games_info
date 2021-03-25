@@ -28,7 +28,11 @@ yarn start
 npm run start
 ```
 **The app should open on "http://localhost:3000" 🎉🎉🎉**
-#
+
+# Test demo :rocket:
+
+ [<img src="https://img.shields.io/static/v1?label=Demo&message=Online&color=gren&style=for-the-badge&logo=Vercel"/>](https://games-info.vercel.app/pages/1)
+
 
 # :pick: Built Using
 
@@ -37,7 +41,13 @@ npm run start
 - [Styled Components](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwj5n6jJjZPpAhV6LLkGHed1B80QFjAAegQIBxAC&url=https%3A%2F%2Fwww.styled-components.com%2F&usg=AOvVaw0J6heqwwkbKYNkr_2e7jIU) - CSS in JS library
 
 - [Axios](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwjcm422jZPpAhXlH7kGHYk4AK8QFjAAegQIAxAB&url=https%3A%2F%2Fgithub.com%2Faxios%2Faxios&usg=AOvVaw266wVW3XPRY46nOw2ULXdh) - Http requests
-#
+
+- [Redux](https://redux.js.org/introduction/getting-started) - A Predictable State Container for JS Apps
+
+- [DayJs](https://github.com/iamkun/dayjs) - format date
+
+- [React Router DOM](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwjEvujUjZPpAhVJIbkGHaNUDdEQFjAAegQIAhAB&url=https%3A%2F%2Freacttraining.com%2Freact-router%2Fweb&usg=AOvVaw39MVbEMEQCl6DDWEkh8tYs) - Navigation
+
 
 # :tada: Acknowledgements
 
