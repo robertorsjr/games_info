@@ -1,27 +1,25 @@
 import React, {useEffect, useState} from 'react'
+import { useDispatch, useSelector } from 'react-redux';
 import { Platforms } from '../../components'
 import { Options, SelectContainer, SelectArrow, TitleSelect } from './styles'
-import { getPlatforms } from '../../services/platforms'
+import { requestPlatforms } from '../../store/ducks/platforms';
 
 const Select = ({ selectedPlatform, setSelectedPlatform }) => {
+  const data = useSelector(({platformsState}) => platformsState.data)
   const [show, toggleShow] = useState(false)
-  const [isShowing, toggleIsShowing] = useState(false)  
-  const [platforms, setPlatforms] = useState({})
+  const [isShowing, toggleIsShowing] = useState(false)
+  const dispatch = useDispatch()
 
-  useEffect(()=> {
-    async function fetchPlatforms() {
-      const response = await getPlatforms()
-      setPlatforms(response.data)
-    }
-    fetchPlatforms()
-  },[])
+  useEffect(() => {
+    dispatch(requestPlatforms())
+  }, [dispatch])
   
   return (
     <SelectContainer onClick={() => toggleShow(!show)}>
       <TitleSelect>{selectedPlatform.name || 'Platforms'}</TitleSelect>
       <SelectArrow/>
       <Options show={show}>
-        {platforms.results && platforms.results.map((platform, index) => (
+        {data.results && data.results.map((platform, index) => (
           <Platforms 
             key={index} 
             platform={platform}
