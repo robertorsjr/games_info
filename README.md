@@ -44,6 +44,10 @@ npm run start
 
 - [Redux](https://redux.js.org/introduction/getting-started) - A Predictable State Container for JS Apps
 
+- [@Fortawesome](https://fontawesome.com/) -  Icons
+
+- [React-loader-spinner](https://github.com/mhnpd/react-loader-spinner) - Loading animation
+
 - [DayJs](https://github.com/iamkun/dayjs) - format date
 
 - [React Router DOM](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwjEvujUjZPpAhVJIbkGHaNUDdEQFjAAegQIAhAB&url=https%3A%2F%2Freacttraining.com%2Freact-router%2Fweb&usg=AOvVaw39MVbEMEQCl6DDWEkh8tYs) - Navigation
