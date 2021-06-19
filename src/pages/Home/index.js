@@ -6,8 +6,8 @@ import { requestGames } from '../../store/ducks/games'
 import { useHistory, useParams } from "react-router-dom";
 
 const Home = () => {
-  const data = useSelector(({gamesState}) => gamesState.data)
-  const loading = useSelector(({gamesState}) => gamesState.loading)
+  const data = useSelector(({ gamesState }) => gamesState.data)
+  const loading = useSelector(({ gamesState }) => gamesState.loading)
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedPlatform, setSelectedPlatform] = useState({})
   const { page = 1 } = useParams();
@@ -26,8 +26,8 @@ const Home = () => {
   const navigate = (num) => {
     history.push(`/pages/${Number(page) + num}`)
     window.scroll({
-      top:0,
-      behavior:'smooth'
+      top: 0,
+      behavior: 'smooth'
     })
   }
 
@@ -36,20 +36,20 @@ const Home = () => {
       <BigBox>
         <HeaderContainer>
           <Title>GAMES_INFO</Title>
-          <Search value={searchTerm} onChange={handleChange}/>
+          <Search value={searchTerm} onChange={handleChange} />
         </HeaderContainer>
         <Select selectedPlatform={selectedPlatform} setSelectedPlatform={setSelectedPlatform} />
-        <LineContainer/>
+        <LineContainer />
         {
           loading ?
-          <HomeSkeleton itemSize={10} />                                          
-          :
-          data.results && data.results.map((game, index) => <Game key={game.id} item={game} isLast={data.results.length - 1 === index} />)
+            <HomeSkeleton itemSize={10} />
+            :
+            data.results && data.results.map((game, index) => <Game key={game.id} item={game} isLast={data.results.length - 1 === index} />)
         }
       </BigBox>
       <SwitchBorder>
-        { data.previous ? <SwitchPages onClick={() => navigate(- 1)} reverse={true} /> : <div /> }
-        { data.next ? <SwitchPages onClick={() => navigate(1)} reverse={false}/> : <div /> }
+        {data.previous ? <SwitchPages onClick={() => navigate(- 1)} reverse={true} /> : <div />}
+        {data.next ? <SwitchPages onClick={() => navigate(1)} reverse={false} /> : <div />}
       </SwitchBorder>
     </>
   )
